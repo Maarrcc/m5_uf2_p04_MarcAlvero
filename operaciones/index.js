@@ -5,8 +5,15 @@
  * @returns {Number} el resultat de la operacio
  */
 function suma(...valors) {
-    
+    let resultat = 0 // Creo una variable per guardar el resultat
+    for (let i = 0; i < valors.length; i++) {
+        // Itero les files de la matriu fins que la variable i sigui menor que la variable valors.length
+        resultat += valors[i] // Afegeixo el valor de l'argument actual a la suma total
+    }
+
+    return resultat
 }
+
 
 
 /**
@@ -18,10 +25,10 @@ function suma(...valors) {
 function multiplica(...valors) {
     let total = valors[0];
     for (let i = 1; i < valors.length; i++) {
-        total *= valors[i]; 
-      }
-    
-    return total;    
+        total *= valors[i];
+    }
+
+    return total;
 };
 
 
